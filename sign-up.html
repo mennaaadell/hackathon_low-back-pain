@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="icon" href="./imgs/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Betania+Patmos&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 text-left">
+          <div class="row">
+            <div class="col-lg-4 cleft">
+              <i class="fa-regular fa-copyright"></i>
+              <h2>Explore the things <span>you love.</span></h2>
+            </div>
+            <div class="col-lg-8 cright">
+              <img src="./imgs/social.webp" alt="" class="social-img" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center align-items-center">
+          <form class="form" id="register-form">
+            <i class="bi bi-person-circle"></i>
+            <h4 class="text-center">Registeration Form</h4>
+            <input type="text" id="name" class="form-control my-4" placeholder="Please Enter Your Name"/>
+            <div class="alert d-none" id="alertname">
+              <p>Must Start With Uppercase</p>
+            </div>
+            <input type="password" id="password" name="password" class="form-control my-4" placeholder="Please Enter Your Password"/>
+            <div class="alert d-none" id="alertpassword">
+              <p>Must Have Char , Numbers , Symbols</p>
+            </div>
+            <input type="password" id="confirmpassword" name="confirmpassword" class="form-control my-4" placeholder="Please confirm password"/>
+            <div class="alert d-none" id="alertconfirmpassword">
+              <p>Password Does Not Match</p>
+            </div>
+            <input type="email" id="email" name="email" class="form-control my-4" placeholder="Please Enter Your Email"/>
+            <div class="alert d-none" id="alertemail">
+              <p>Must Be Valid Email</p>
+            </div>
+            <input type="tel" id="number" name="number" class="form-control my-4" placeholder="Please Enter Your Number"/>
+            <div class="alert d-none" id="alertnumber">
+              <p>Must Be At Least 11 Number</p>
+            </div>
+            <input type="number" id="age" name="age" class="form-control my-4" placeholder="Please Enter Your Age"/>
+            <select name="gender" id="gender" class="form-select w-75" required>
+              <option value="" selected disabled>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+              <div class="alert d-none" id="alertgender">
+              <p>Please Select Gender</p>
+            </div>
+            <div class="alert d-none" id="alertregister"></div>
+            <button class="btn my-4" type="submit">Register Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2026 🩺 MedGuide | Ai Assisstant. All rights reserved.</p>
+    </footer>
+    <script src="./js/register.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

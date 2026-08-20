@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+body {
+  background-color: #0a1d36;
+  color: rgba(255, 255, 255, 0.966);
+}
+.container{
+    width: 60%;
+}
+.form {
+  width: 100%;
+  text-align: center;
+}
+.bi-person-circle {
+  position: relative;
+  top: 80px;
+  font-size: 70px;
+  color: rgb(0, 100, 224);
+}
+h4 {
+  margin-top: 10%;
+}
+.form input {
+  margin: auto;
+  width: 45%;
+  height: 40px;
+  padding-block: 23px;
+  padding-left: 20px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.form input::placeholder {
+  font-family: "poppins";
+  font-size: 13px;
+  color: rgba(118, 118, 118, 0.601);
+}
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 100, 224, 0.3);
+}
+.form input:hover{
+    transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 100, 224, 0.3);
+}
+.btn {
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  background: linear-gradient(90deg, #035dd15c,#085bc8, #035dd15c);
+  width: 45%;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 100, 224, 0.3);
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.alert{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  min-height: 40px;
+  padding: 10px 20px;
+  width: 45%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #085bc89f;
+  border: none;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+footer {
+    margin-top: 10%;
+  font-family: "poppins";
+  font-size: 17px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 3px solid rgba(118, 118, 118, 0.334);
+}
+@media (max-width: 1000px) and (min-width: 450px) {
+ .form input ,.btn,.alert{
+width: 100%;
+ }
+ .bi-person-circle {
+  position: relative;
+  top: 30px;
+  font-size: 70px;
+  
+}
+}

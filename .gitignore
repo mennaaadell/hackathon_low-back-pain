@@ -1,0 +1,14 @@
+# Secrets and local configuration
+.env
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Local editor files
+.vscode/*
+!.vscode/settings.json
+
+# Operating system files
+.DS_Store
+Thumbs.db

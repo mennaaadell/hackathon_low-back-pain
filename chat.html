@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedGuide Chat</title>
+    <link rel="icon" href="imgs/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="chat-page-body">
+    <div class="chat-page-shell">
+      <header class="chat-header">
+        <div class="chat-brand-wrap">
+          <a href="index.html" class="back-link" aria-label="Back to home">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <div class="chat-brand-mini">
+            <img src="imgs/logo.png" alt="MedGuide AI logo" />
+            <div>
+              <strong>MedGuide AI</strong>
+              <span>Clinical Guideline Assistant</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="home" id="chat-home">
+          <h2 id="hometitle"></h2>
+          <p class="welcome-text"></p>
+        </div>
+
+        <div class="chat-header-actions">
+          <button
+            class="chat-theme-btn"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            🌙
+          </button>
+          <button class="chat-settings" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </div>
+      </header>
+
+      <aside class="chat-sidebar-panel">
+        <button class="new-chat-btn">+ New Chat</button>
+
+        <div class="chat-sidebar">
+          <div class="chat-item active">
+            <span class="chat-icon"
+              ><i class="fa-regular fa-comments"></i
+            ></span>
+            <span>Hello! I'm MedGuide AI</span>
+          </div>
+          <div class="chat-item">
+            <span class="chat-icon"
+              ><i class="fa-regular fa-file-lines"></i
+            ></span>
+            <span>Acupuncture for low back pain</span>
+          </div>
+          <div class="chat-item">
+            <span class="chat-icon"
+              ><i class="fa-solid fa-prescription-bottle-medical"></i
+            ></span>
+            <span>Pharmacological management for sciatica</span>
+          </div>
+          <div class="chat-item">
+            <span class="chat-icon"
+              ><i class="fa-solid fa-clipboard-question"></i
+            ></span>
+            <span>When is imaging recommended?</span>
+          </div>
+          <div class="chat-item">
+            <span class="chat-icon"><i class="fa-solid fa-dumbbell"></i></span>
+            <span>Exercise programs for low back pain</span>
+          </div>
+          <div class="chat-item">
+            <span class="chat-icon"
+              ><i class="fa-solid fa-user-doctor"></i
+            ></span>
+            <span>Treatments for chronic sciatica</span>
+          </div>
+          <button class="btn my-3 new-chat-btn" id="logout-btn" onclick="logout()">
+            Log Out
+          </button>
+        </div>
+      </aside>
+
+      <main class="chat-main-panel">
+        <div class="chat-body">
+          <div class="chat-message assistant">
+            <div class="bubble">Hello! I'm MedGuide AI</div>
+            <div class="bubble secondary">
+              I can help you find answers based on official clinical guidelines.
+            </div>
+            <div class="bubble secondary">What would you like to know?</div>
+          </div>
+
+          <div class="message-suggestions">
+            <button>Acupuncture for low back pain</button>
+            <button>Pharmacological management for sciatica</button>
+            <button>When is imaging recommended?</button>
+            <button>Exercise programs for low back pain</button>
+          </div>
+
+          <div class="chat-message user">
+            <div class="bubble user-bubble">
+              What is recommended regarding acupuncture for low back pain?
+            </div>
+          </div>
+
+          <div class="chat-message assistant">
+            <div class="bubble">
+              The guideline recommends acupuncture may be considered for
+              managing low back pain. It can provide short-term improvement in
+              pain and function.
+            </div>
+          </div>
+
+          <div class="source-box">
+            <span>Source: Page 45</span>
+          </div>
+
+          <div class="source-list">
+            <div class="source-title">
+              <span>Sources</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="source-item">
+              • NICE Guideline: Low back pain and sciatica in over 16s:
+              assessment and management (Page 45)
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input-wrap">
+          <input type="text" placeholder="Type your question here..." />
+          <button aria-label="Send message">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/chat.js"></script>
+  </body>
+</html>

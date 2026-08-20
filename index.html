@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedGuide</title>
+    <link rel="icon" href="imgs/logo.png" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-shell">
+          <a href="#" class="brand" aria-label="MedGuide AI home">
+            <img src="imgs/logo.png" alt="MedGuide AI logo" class="brand-mark" />
+            <span class="brand-text">
+              <span class="brand-name">MedGuide AI</span>
+              <small>Low back pain and sciatica in over 16s GuidelineAssistant</small>
+            </span>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            id="navbar-toggler"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <nav class="main-nav" id="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#sources">Sources</a>
+            <a href="./sign-up.html">Sign Up / Login</a>
+
+            <div class="nav-tools">
+              <button id="theme-btn" type="button" aria-label="Toggle theme">
+                🌙
+              </button>
+              <a href="sign-up.html" class="nav-btn auth-gated-link">Let's Talk</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="landing-page">
+        <section class="hero">
+          <div class="container hero-inner">
+            <div class="hero-copy">
+              <h1>
+                Evidence-based answers<br />from <span>trusted guidelines</span>
+              </h1>
+              <p>
+                MedGuide AI helps you get clear, reliable answers from official
+                clinical guidelines.
+              </p>
+
+              <div class="hero-actions">
+                <a class="primary-btn auth-gated-link" href="chat.html">Start a Conversation</a>
+                <button class="secondary-btn" onclick="openCV()">
+                  Learn More <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-art" aria-hidden="true">
+              <img src="imgs/logo.png" alt="Medical AI logo illustration" />
+            </div>
+          </div>
+        </section>
+        <!-- About section start -->
+        <section id="about">
+          <div class="container">
+            <h2 class="section-title">ِAbout</h2>
+            <div class="about-card">
+              <p class="about-text">
+                Low back pain and sciatica affect millions of adults, with most
+                cases resolving within weeks. However, early assessment is key
+                to preventing chronic disability. This page provides a clear
+                summary of best-practice recommendations for managing these
+                conditions in over-16s.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- process section start -->
+        <section class="process" id="how-it-works">
+          <div class="container">
+            <h2 class="section-title">How MedGuide AI Works</h2>
+
+            <div class="card-grid">
+              <article class="info-card">
+                <div class="icon-wrap">
+                  <i class="fa-regular fa-file-lines"></i>
+                </div>
+                <h3>1. Guidelines</h3>
+                <p>We use official medical guidelines as our knowledge base.</p>
+              </article>
+
+              <article class="info-card">
+                <div class="icon-wrap">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h3>2. Smart Search</h3>
+                <p>
+                  Advanced retrieval finds the most relevant information for
+                  your question.
+                </p>
+              </article>
+
+              <article class="info-card">
+                <div class="icon-wrap">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <h3>3. AI Answer</h3>
+                <p>
+                  AI generates clear, accurate answers with citations and page
+                  references.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- benefits  section start -->
+        <section class="benefits">
+          <div class="container">
+            <h2 class="section-title">Why MedGuide AI?</h2>
+            <div class="benefit-grid">
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>Evidence-based</h4>
+                <p>Answers from trusted clinical guidelines.</p>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h4>Accurate</h4>
+                <p>Relevant information with page references.</p>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h4>Fast</h4>
+                <p>Get answers in seconds.</p>
+              </div>
+
+              <div class="benefit-item">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <h4>Reliable</h4>
+                <p>Built for students, professionals, and clinicians.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="line"></div>
+      <!-- contact section -->
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <div class="contact-col brand-col">
+            <img src="./imgs/logo.png" alt="" class="contact-col-img" />
+            <h2 class="contact-brand-title">
+              Med<span class="contact-brand-title-span">Guide</span
+              ><span class="contact-brand-title-span2">Ai</span>
+            </h2>
+            <!-- <p class="contact-brand-text">Your Trusted Medical Guideline Assistant.</p> -->
+          </div>
+
+          <div class="contact-col">
+            <h3>Privacy</h3>
+            <ul>
+              <li><a href="#">Terms of use</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-col">
+            <h3>About us</h3>
+            <ul>
+              <li><a href="#">Find a location</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our story</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-col">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Plans & pricing</a></li>
+              <li><a href="#">Sell your products</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-col social-col">
+            <h3>Social media</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line"></div>
+      <!-- footer section -->
+      <footer>
+        <a href="#top" class="back-to-top" id="topBtn">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+        <span> © 2026 🩺 MedGuide | Ai Assisstant. All rights reserved.</span>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
